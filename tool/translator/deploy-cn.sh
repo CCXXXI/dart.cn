@@ -8,7 +8,7 @@ commitMessage=$(git log --oneline -n 1)
 
 rm -rf /tmp/site-dart.cn/ || true
 
-git clone https://chenglu:$DEPLOY_TOKEN@github.com/chenglu/site-dart.cn.git /tmp/site-dart.cn/
+git clone https://chenglu:${{ secrets.DEPLOY_TOKEN }}@github.com/chenglu/site-dart.cn.git /tmp/site-dart.cn/
 
 # cd /tmp/site-dart.cn/
 
